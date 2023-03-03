@@ -1,17 +1,19 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu-left.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/close.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   background: #1b1d20;
-  font-family: 'Manrope';
+  font-family: 'Roboto';
   font-style: normal;
-  
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
   display: block;
-
 }
 .img-back{
 background: #FFFFFF;
@@ -21,9 +23,7 @@ margin: 1rem 0.5rem;
 justify-content: center;
 text-align: center;
 align-items: center;
-box-shadow: 5px 5px 25px 0 rgba(	211,221,239, 0.53) ;
-
-
+box-shadow: 5px 5px 10px 0 rgba(	211,221,239, 0.53) ;
 }
 .py-1{
   padding: 1.5rem 1.5rem 1rem 1.5rem;
@@ -35,35 +35,40 @@ a {
 
 
 .slide {
-  max-width: 380px;
-  max-height: 800px;
-  height: 800px;
-  margin: 20px auto;
   display: grid;
-  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
-  /* background-color: #94d2e9; */
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  background: #F5F7FA;
-  font-weight: 700;
   grid-template-rows: 1fr auto;
- 
+  /* max-width: 390px;
+  max-height: 844px; */
+  font-weight: 700;
+  width: 100vw;
+  height:100vh ;
+  /* margin: 0 auto; */
+  cursor: pointer;
+  background: #F5F7FA;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
  
 }
 .header{
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   background: #FFFFFF;
   position: relative;
   padding: 2rem;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
+}
+.header-close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 1;
+  cursor: pointer;
+  color: #000;
 }
 .header img{
   max-width: 100%;
   display: block;
-  padding: 0.5rem 6rem;
   width: 5rem;
   height: 1.5rem ;
 }
@@ -82,7 +87,7 @@ a {
   
 }
 .desc{
-  font-family: 'Manrope';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 0.8rem;
@@ -123,7 +128,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-position-y: -19.5rem;
+  background-position-y: bottom;
   /* background-position-y: 14rem;
   background-position-x: -10rem; */
   
@@ -132,7 +137,7 @@ a {
   position: absolute;
   top: 20px;
   right: 10px;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
   color: #FFFFFF;
 }
@@ -148,14 +153,6 @@ a {
   background-position:center;
   filter: invert(100%);
   -webkit-filter: invert(100%);
-}
-
-
-.play {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
-}
-.pause {
-   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==)!important;
 }
 
 .slide-nav button {

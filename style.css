@@ -16,6 +16,7 @@ img {
   max-width: 100%;
   width: 100vw;
   display: block;
+  height: auto;
 }
 .img-back{
 background: #FFFFFF;
@@ -43,7 +44,7 @@ a {
   max-height: 844px; */
   font-weight: 700;
   width: 100vw;
-  height:100vh ;
+  height:100vh;
   /* margin: 0 auto; */
   cursor: pointer;
   background: #F5F7FA;
@@ -135,7 +136,7 @@ a {
 }
 .close {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 10px;
   z-index: 3;
   cursor: pointer;
